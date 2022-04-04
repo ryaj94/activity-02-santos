@@ -31,3 +31,16 @@ Sp. Defense : 188
 
 """)
 
+target = 1
+weather = 1
+badge = 1
+crit = random.randint(1,2)
+randomm = round(random.uniform(0.85 , 1.00),2)
+stab = 1
+type = round(random.uniform(0.25 , 0.50),2)
+opt = random.randint(0,1)
+if opt ==0:
+    burn=0.5
+elif opt ==1:
+    burn=1
+other = 1
