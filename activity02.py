@@ -44,3 +44,25 @@ if opt ==0:
 elif opt ==1:
     burn=1
 other = 1
+
+modifier = target * weather * badge * crit * randomm * stab * type * burn * other
+damage =round(((((((2*90)/5)+2) * 110 * (205/188))/50)+2),2) 
+fdamage= damage * modifier
+
+print(f"""
+MODIFIERS:
+
+target :    {target}
+weather :   {weather}
+badge :     {badge}
+crit :      {crit}
+random :    {randomm}
+stab :      {stab}
+type :      {type}
+burn :      {burn}
+other :     {other}
+
+total damage :      {damage}
+total modifier :    {modifier}
+Your final damage:  {round((fdamage),2)}
+""")
