@@ -35,7 +35,7 @@ target = 1
 weather = 1
 badge = 1
 crit = random.randint(1,2)
-randomm = round(random.uniform(0.85 , 1.00),2)
+rand = round(random.uniform(0.85 , 1.00),2)
 stab = 1
 type = round(random.uniform(0.25 , 0.50),2)
 opt = random.randint(0,1)
@@ -45,7 +45,7 @@ elif opt ==1:
     burn=1
 other = 1
 
-modifier = target * weather * badge * crit * randomm * stab * type * burn * other
+modifier = target * weather * badge * crit * rand * stab * type * burn * other
 damage =round(((((((2*90)/5)+2) * 110 * (205/188))/50)+2),2) 
 fdamage= damage * modifier
 
@@ -56,7 +56,7 @@ target :    {target}
 weather :   {weather}
 badge :     {badge}
 crit :      {crit}
-random :    {randomm}
+random :    {rand}
 stab :      {stab}
 type :      {type}
 burn :      {burn}
